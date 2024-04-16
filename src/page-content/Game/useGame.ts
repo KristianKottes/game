@@ -11,9 +11,9 @@ const getData = (data: number[][][], position: number[]) => {
   return data[position[0]][position[1]];
 };
 
-const useMaze = () => {
-  const { user } = useAuthContext();
+const useGame = () => {
   const navigate = useNavigate();
+  const { user } = useAuthContext();
   const [mazeData, setMazeData] = useState<number[][][]>([]);
   const [currentPosition, setCurrentPosition] = useState<number[]>([0, 0]);
   const [currentTurnUser, setCurrentTurnUser] = useState<IUser | null>(null);
@@ -23,7 +23,6 @@ const useMaze = () => {
   const [game, setGame] = useState<IGame | null>(null);
   const [command, setCommand] = useState<string | null>(null);
   const [giveUpModalOpen, setGiveUpModalOpen] = useState(false);
-
   const [winner, setWinner] = useState<IUser | null>(null);
 
   const { gameId } = useParams();
@@ -276,4 +275,4 @@ const useMaze = () => {
   };
 };
 
-export default useMaze;
+export default useGame;

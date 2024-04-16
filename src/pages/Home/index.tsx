@@ -1,9 +1,7 @@
 import React from 'react';
 
-import { Playground } from '../../components';
+import { Home } from '../../page-content';
 
-const HomePage = () => {
-  return <Playground />;
-};
+const HomePage = () => <Home />;
 
 export default HomePage;

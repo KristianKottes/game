@@ -6,7 +6,7 @@ import { gamesService } from '../../services';
 import { IGame } from '../../types/game.interface';
 import { socket } from '../../utils';
 
-const usePlayground = () => {
+const useHome = () => {
   const [isLoading, setLoading] = useState(false);
   const [games, setGames] = useState<IGame[]>([]);
   const [game, setGame] = useState<IGame | null>(null);
@@ -77,4 +77,4 @@ const usePlayground = () => {
   return { games, isLoading, onCancelGame, onCreateNewGame, onJoinToGameGame };
 };
 
-export default usePlayground;
+export default useHome;

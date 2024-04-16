@@ -1,10 +1,10 @@
 import { Box, Button, CircularProgress, Stack, Typography } from '@mui/material';
 import React from 'react';
 
-import usePlayground from './usePlayground';
+import useHome from './useHome';
 
-const Playground = () => {
-  const { games, isLoading, onCancelGame, onCreateNewGame, onJoinToGameGame } = usePlayground();
+const Home = () => {
+  const { games, isLoading, onCancelGame, onCreateNewGame, onJoinToGameGame } = useHome();
 
   return isLoading ? (
     <Box
@@ -59,4 +59,4 @@ const Playground = () => {
   );
 };
 
-export default Playground;
+export default Home;

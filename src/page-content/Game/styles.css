@@ -1,0 +1,51 @@
+#maze {
+  border-collapse: collapse;
+  background-color: white;
+  /* background-color: #000; */
+}
+
+#maze td {
+  width: 20px;
+  height: 20px;
+}
+
+.mazeWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.positionBlock {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  font-size: 24px !important;
+}
+
+.name {
+  font-size: 34px !important;
+  padding: 5px 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.messagesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.messages {
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-height: 70%;
+}

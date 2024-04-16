@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Maze } from '../../components';
+import { Game } from '../../page-content';
 
-const Game = () => <Maze />;
+const GamePage = () => <Game />;
 
-export default Game;
+export default GamePage;
